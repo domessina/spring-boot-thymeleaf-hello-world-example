@@ -4,6 +4,7 @@
     <artifactId>SpringBoot-Thymeleaf-Example</artifactId>
     <name>SpringBoot-Thymeleaf-Example</name>
     <description>SpringBoot-Thymeleaf-Example</description>
+    <packaging>war</packaging>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
