@@ -21,7 +21,7 @@ mvn clean'''
     }
     stage('Report JUnit') {
       steps {
-        junit '/target/surefire-reports/*'
+        junit(testResults: '/target/surefire-reports/*', allowEmptyResults: true)
       }
     }
   }
