@@ -9,6 +9,6 @@ public class AppTest {
 
     @Test
     public void apply() {
-        Assertions.assertThat("Click me to say Hello").contains("Hello");
+        Assertions.assertThat("Click me to say Hello").contains("Heljlo");
     }
 }
