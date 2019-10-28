@@ -17,7 +17,7 @@ public class HelloWorldController {
     @RequestMapping("/hello")
     public String hello(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
 
-        String message = "You just create Spring Boot Thymeleaf Example successfully écrasé";
+        String message = "You just create Spring Boot Thymeleaf Example successfully";
         model.addAttribute("name", name);
         model.addAttribute("message", message);
         
