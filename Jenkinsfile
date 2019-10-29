@@ -24,4 +24,7 @@ mvn clean'''
       }
     }
   }
+  environment {
+    MSYS_NO_PATHCONV = '1'
+  }
 }
