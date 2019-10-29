@@ -9,7 +9,8 @@ pipeline {
     stage('initialize') {
       steps {
         sh '''echo PATH = ${PATH}
-'''
+echo MAVEN_HOME = ${MAVEN_HOME}
+mvn clean'''
       }
     }
     stage('Build') {
