@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'maven:3.3.9-jdk-8'
-      args 'MSYS_NO_PATHCONV=1 '
+      args ' -w C:\\\\Users\\\\d.messina\\\\.jenkins\\\\workspace\\\\full-workflow_blue-ocean'
     }
 
   }
@@ -24,8 +24,5 @@ mvn clean'''
         junit(testResults: '/target/surefire-reports/*', allowEmptyResults: true)
       }
     }
-  }
-  environment {
-    MSYS_NO_PATHCONV = '1'
   }
 }
